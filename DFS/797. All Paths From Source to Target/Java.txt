@@ -1,0 +1,25 @@
+class Solution {
+    public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
+        List<List<Integer>> list = new ArrayList<>();
+        List<Integer> listIn = new ArrayList<>();
+        listIn.add(0);
+        dfs(graph, 0, listIn, list);
+        
+        return list;
+    }
+    
+    private void dfs(int[][]graph, int node, List<Integer> listIn, List<List<Integer>>list){
+        if (node==graph.length-1){
+            list.add(new ArrayList<Integer>(listIn));
+            return;
+        }
+        
+        for(int i=0;i<graph[node].length;i++){
+            listIn.add(graph[node][i]);
+            dfs(graph, graph[node][i], listIn, list);
+            listIn.remove(listIn.size()-1);
+        }
+        
+    }
+    
+}
