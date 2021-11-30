@@ -1,0 +1,4 @@
+/* Write your T-SQL query statement below */
+SELECT A.id FROM Weather A 
+INNER JOIN Weather B ON A.recordDate=DATEADD(DAY,1,B.recordDate)
+WHERE B.temperature<A.temperature
