@@ -1,0 +1,23 @@
+public class Solution {
+    public IList<int> PartitionLabels(string s) {
+        List<int> list= new List<int>();
+        Dictionary <int,int> dic = new Dictionary<int,int>();
+        for(int i=0;i<s.Length;i++){
+            if (!dic.ContainsKey(s[i])){
+                dic.Add(s[i], s.LastIndexOf(s[i]));
+            }
+        }
+        
+        int start=0;
+        int last=0;
+        for(int i=0;i<s.Length;i++){
+            last=Math.Max(dic[s[i]],last);
+            if (last==i){
+                list.Add(last-start+1);
+                start=last+1;
+            }
+        }
+        
+        return list.ToArray();
+    }
+}
