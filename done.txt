@@ -12,6 +12,7 @@
 1189. Maximum Number of Balloons
 1290. Convert Binary Number in a Linked List to Integer
 1306. Jump Game III
+1338. Reduce Array Size to The Half
 1446. Consecutive Characters
 1464. Maximum Product of Two Elements in an Array
 2022. Convert 1D Array Into 2D Array
