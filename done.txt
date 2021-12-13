@@ -5,6 +5,7 @@
 198. House Robber
 328. Odd Even Linked List
 337. House Robber III
+402. Remove K Digits
 450. Delete Node in a BST
 563. Binary Tree Tilt
 763. Partition Labels
