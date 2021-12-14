@@ -10,6 +10,7 @@
 563. Binary Tree Tilt
 763. Partition Labels
 797. All Paths From Source to Target
+938. Range Sum of BST
 1189. Maximum Number of Balloons
 1290. Convert Binary Number in a Linked List to Integer
 1306. Jump Game III
